@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Visualizer"
         mc:Ignorable="d"
-        Title="FortniteZoneSimulatorView" Height="300" Width="300">
+        Title="FortniteZoneSimulatorView" Height="800" Width="800">
     <Window.DataContext>
         <local:FortniteZoneSimulatorViewModel/>
     </Window.DataContext>

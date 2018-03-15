@@ -68,10 +68,7 @@ namespace Visualizer
 
         private void OnContractZone()
         {
-            if(_sequenceDispose != null)
-            {
-                _sequenceDispose.Dispose();
-            }
+            _sequenceDispose?.Dispose();
 
             int stepCount = 100;
             var context = SynchronizationContext.Current;
@@ -91,7 +88,7 @@ namespace Visualizer
                     .ObserveOn(context)
                     .SubscribeOn(context)
                     .Subscribe(tuple =>
-                    {                        
+                    {
                         MatrixBitmapSource = tuple.Item3;
                         Info = (stepCount - tuple.Item1).ToString();
                         CalculationTime = tuple.Item2.ToString() + " ms";
