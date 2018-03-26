@@ -2,7 +2,6 @@
 using MediaLib;
 using System;
 using System.Drawing;
-using System.IO;
 
 namespace FortniteZoneSimulator
 {
@@ -62,7 +61,7 @@ namespace FortniteZoneSimulator
             var stepCenter = _nextCenter + (stepCount - step) / (double)stepCount * (_currentCenter - _nextCenter);
             var bitmapWithCirlce = ShapeHelper.AddCircle(new Bitmap(_currentZoneSet), Brushes.Blue, stepCenter, (float)stepRadius);
 
-            if(step == stepCount)
+            if (step == stepCount)
             {
                 _currentRadius = stepRadius;
                 _currentCenter = stepCenter;

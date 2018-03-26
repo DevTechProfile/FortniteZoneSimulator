@@ -30,7 +30,7 @@ namespace MediaLib
 
                 graphics.SetClip(clipPath, CombineMode.Exclude);
 
-                var color = Color.FromArgb(80, excludeColor);
+                var color = Color.FromArgb(200, excludeColor);
                 using (SolidBrush brush = new SolidBrush(color))
                 {
                     graphics.FillRectangle(brush, 0, 0, bitmap.Width, bitmap.Height);
